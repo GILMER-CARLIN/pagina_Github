@@ -1,59 +1,138 @@
+:root {
+    --neon-cyan: #00f2ff;
+    --dark-bg: #0a1115;
+    --border-gold: #4a3e2a;
+    --text-glow: 0 0 10px rgba(0, 242, 255, 0.5);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-            font-family: 'Segoe UI', sans-serif, Tahoma, Geneva, Verdana;
-            line-height: 1.6;
-background: linear-gradient(90deg,rgba(218, 218, 247, 1) 0%, rgba(218, 218, 247, 1) 36%, rgba(157, 223, 235, 1) 100%);
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        header {
-            border-bottom: 2px solid #65bede;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-        
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 5px;
-        }
-        
-        h2 {
-            color: #3498db;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 5px;
-        }
-        
-        .contact-info {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-        
-        section {
-            margin-bottom: 30px;
-        }
-        
-        .job, .education-item {
-            margin-bottom: 20px;
-        }
-        
-        .date {
-            color: #7f8c8d;
-            font-style: italic;
-        }
-        
-        ul {
-            padding-left: 20px;
-        }
-        
-        @media print {
-            body {
-                font-size: 12px;
-            }
-            
-            a {
-                color: #000;
-                text-decoration: none;
-            }
-        }
+    background-color: var(--dark-bg);
+    background-image: url(Fondo\ Dota.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e0e0e0;
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle, transparent 20%, rgba(0,0,0,0.8) 100%);
+    z-index: -1;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.interface-card {
+    position: relative;
+    background: rgba(10, 25, 30, 0.92);
+    border: 3px solid var(--border-gold);
+    max-width: 850px;
+    padding: 40px;
+    box-shadow: inset 0 0 50px #000, 0 0 30px rgba(0, 242, 255, 0.2);
+    text-align: center;
+}
+
+/* Efecto de marco neón */
+.interface-card::before {
+    content: "";
+    position: absolute;
+    top: -5px; left: -5px; right: -5px; bottom: -5px;
+    border: 2px solid var(--neon-cyan);
+    pointer-events: none;
+    clip-path: polygon(5% 0, 95% 0, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0 95%, 0 5%);
+    opacity: 0.3;
+}
+
+h1 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: var(--text-glow);
+    margin: 15px 0 5px 0;
+}
+
+.subtitle {
+    color: #ccc;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: var(--neon-cyan);
+    text-transform: uppercase;
+    margin-top: 30px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--neon-cyan), transparent);
+    margin: 10px 0 20px 0;
+}
+
+.item {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.date {
+    color: var(--neon-cyan);
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+/* GRID DE HABILIDADES */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: left;
+}
+
+ul {
+    text-align: left;
+    list-style-position: inside;
+    margin: 10px 0;
+    list-style-type: square;
+}
+
+li {
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+    color: #cbd5e0;
+}
+
+.links a {
+    color: var(--neon-cyan);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    text-shadow: 0 0 10px var(--neon-cyan);
+    color: #fff;
+}
+
+.game-logo {
+    width: 70px;
+    filter: drop-shadow(0 0 8px #ff4500);
+}
