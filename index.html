@@ -3,127 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Curriculum Vitae </title>
+    <title>Perfil Gilmer Carlin - Dota Style</title>
+    <link rel="stylesheet" href="/CSS/curriculum-dota.css">
 </head>
 <body>
-    <header>
-        <h1>Gilmer Carlin Cordova Triveño</h1>
-        <p>Administrador de Redes y Comunicaciones</p>
-        
-        <div class="contact-info">
-            <address>
-                <a href="gilmercarlincordovatriveno@gmail.com">gmail</a> |
-                <a href="tel:+1234567890">+51 927 310 327</a> |
-                Ayacucho, Perú
-            </address>
-            <nav>
-                <a href="https://www.linkedin.com/in/gilmer-carlin-cordova-trive%C3%B1o-a40834299/" target="_blank" rel="noopener">LinkedIn</a> |
-                <a href="https://github.com/GILMER-CARLIN" target="_blank" rel="noopener">GitHub</a> |
-                <a href="xvideos.com" target="_blank" rel="noopener">Portfolio</a>
-            </nav>
-        </div>
-    </header>
-    
-    <main>
-        <section id="perfil">
-            <h2>Perfil Profesional</h2>
-            <p>(Recien egresado en Redes y Comunicaciones)</p>
-        </section>
-        
-        <section id="experiencia">
-            <h2>Experiencia Laboral</h2>
+    <div class="background-overlay"></div>
+
+    <main class="wrapper">
+        <article class="interface-card">
+            <div class="frame-border"></div>
             
-            <article class="job">
-                <h3>Practicas Profesionales</h3>
-                <p class="company">Luso S.A.C | <span class="date">Enero 2025 - Marzo 2025</span></p>
-                <ul>
-                    <li>Tecnico de campo</li>
-                    <li>Responsable de la instalacion y garantia de las camaras multi uso</li>
-                    <li>Responsable de la buena identificacion de la empresa en ruglos de seguridad</li>
-                </ul>
-            </article>
-            
-            <article class="job">
-                <h3>Proyectos Academicos Practicos</h3>
-                <p class="company">Instituto / Laboratorios Virtuales | <span class="date">febrero 2020- agosto 2022</span></p>
-                <ul>
-                    <li>Diseñe e Implemente diferentes tipos de Redes ofreciendo servicios como ftp, ssh, apache, etc.</li>
-                    <li>Configure Politicas de seguridad perimetral en firewall PFSense como reglas de acceso y filtrado de contenido</li>
-                    <li>Creé scrips en python para desarrollar habilidades en programación</li>
-                </ul>
-            </article>
-        </section>
-        
-        <section id="educacion">
-            <h2>Formación Académica</h2>
-            
-            <article class="education-item">
-                <h3>Administracion de Redes y Comunicaciones</h3>
-                <p class="institution">IESP Manuel Antonio Hierro Pozo | <span class="date">2022</span></p>
-                <p>Especializacion en Infraestructura de Redes , mejores calificaciones de los 3 años de la carrera, creacion de herramientas para la seguridad en una Red.</p>
-            </article>
-        </section>
-        
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Técnicas</h3>
-                    <ul>
-                        <li>Routung y Switching (Cisco IOS, VLANs, OSPF, STP)</li>
-                        <li>Protocolos de Red (TCP/IP, DNS, DHCP, HTTP/HTPPS)</li>
-                        <li>Análisis de tráfico (Wireshark basico)</li>
-                        <li>Sistemas Operativos (Windows Server, Linux)</li> 
-                    </ul>
+            <header class="header-content">
+                <img src="/Imagenes/dota.png" alt="Dota 2 Logo" class="game-logo">
+                <h1>Gilmer Carlin Cordova Triveño</h1>
+                <p class="subtitle">Administrador de Redes y Comunicaciones</p>
+                <nav class="links">
+                    <a href="#">Gmail</a> | <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Portafolio</a>
+                </nav>
+            </header>
+
+            <section class="scroll-content">
+                <div class="section-block">
+                    <h3>Perfil Profesional</h3>
+                    <hr>
+                    <p>Técnico egresado en Redes y Comunicaciones con enfoque en...</p>
                 </div>
-                
-                <div class="skill-category">
-                    <h3>Profesionales</h3>
-                    <ul>
-                        <li>Resolucion metódica de Problemas</li>
-                        <li>Trabajo en equipo y colaboracion</li>
-                        <li>Capaciodad de aprendisaje rapido</li>
-                        <li>Documentacion Técnica clara</li>
-                    </ul>
+
+                <div class="section-block">
+                    <h3>Experiencia Laboral</h3>
+                    <hr>
+                    <div class="job-item">
+                        <h4>LCSO S.A.C | Enero 2025 - Marzo 2025</h4>
+                        <ul>
+                            <li>Gestión de servicios e infraestructura IT.</li>
+                            <li>Soporte técnico y mantenimiento de servidores.</li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <div class="skill-category">
-                    <h3>Idiomas</h3>
-                    <ul>
-                        <li>Español - Nativo</li>
-                        <li>Inglés - Basico (writing and speaking)</li>
-                        <li>Qechua - Basico</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        
-        <section id="certificaciones">
-            <h2>Certificaciones y Cursos</h2>
-            <ul>
-                <li>FABLAB - IESP Manuel Antonio Hierro Pozo - <span class="date">2022</span></li>
-                <li>Certificación de Ingles - IESP Manuel Antonio Hierro Pozo - <span class="date">2022</span></li>
-                <li>Curso de Redes Cisco - IESP Manuel Antonio Hierro Pozo - <span class="date">2021</span></li>
-            </ul>
-        </section>
-        
-        <section id="proyectos">
-            <h2>Proyectos Destacados</h2>
-            
-            <article class="project">
-                <h3>Automatizacion de Scaner en Red</h3>
-                <p>Creacoon de Escaner para la red con Python y bloqueo de paquetes salidos para el dispositivo</p>
-                <p><a href="https://github.com/GILMER-CARLIN/Proyectos_Python" target="_blank" rel="noopener">Enlace al proyecto</a></p>
-            </article>
-        </section>
+            </section>
+        </article>
     </main>
-    
-    <footer>
-        <p>Referencias disponibles upon request.</p>
-    </footer>
 </body>
 </html>
+
 
 
